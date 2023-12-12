@@ -1,0 +1,18 @@
+ci:
+  collect: 
+    numberOfRuns: 1
+    startServerCommand: 'npm run generate & npm run preview'
+    startServerReadyPattern: 'Starting'
+    url: 
+      - http://localhost:3000/
+  assert:
+    assertions:
+      largest-contentful-paint:
+        - 'error'
+        - maxNumericValue: 4000
+      max-potential-fid:
+        - 'error'
+        - maxNumericValue: 300
+      cumulative-layout-shift:
+        - 'error'
+        - maxScore: 0.25

@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lighthouse": "lhci autorun"
   },
   "devDependencies": {
     "@lhci/cli": "^0.12.0",

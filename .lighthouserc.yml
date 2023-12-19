@@ -9,10 +9,10 @@ ci:
     assertions:
       largest-contentful-paint:
         - 'error'
-        - maxNumericValue: 4000
+        - maxNumericValue: 0
       max-potential-fid:
         - 'error'
-        - maxNumericValue: 300
+        - maxNumericValue: 0
       cumulative-layout-shift:
         - 'error'
-        - maxScore: 0.25
+        - maxScore: 0
